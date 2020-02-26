@@ -16,10 +16,16 @@
 
 ```html
 
-This example will return an image with it's width set to match the browser window width. It will also
+This will return an image with it's width set to match the browser window width. It will also
 automatically change it's format to WebP if supported
 
 <img src="setAutoWidth(/imageURL.png)">
+
+<hr>
+
+This will return an image with a specified width
+
+<img src="setFixedWidth(/imageURL.png, 350)">
 
 ```
 
