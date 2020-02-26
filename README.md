@@ -29,7 +29,7 @@ This will return an image with a specified width
 
 ```
 
-
+<a href="https://github.com/suiteD1989/contentful-image-optimiser"> Link to repo </a>
 
 <h3> Download & Installation </h3>
 
