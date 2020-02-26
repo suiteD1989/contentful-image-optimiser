@@ -34,18 +34,6 @@ const CheckMobile = () => {
 /**
  * 
  * @param {*} url 
- * returns a smaller version of image
- */
-const thumbnailImage = (url) => {
-    if (_checkBrowser()) {
-        return url + '?w=650'
-    } else {
-        return url + '?w=650&fm=webp'
-    }
-}
-/**
- * 
- * @param {*} url 
  * sets the width of image to that of browser window
  */
 const setAutoWidth = (url) => {
@@ -76,7 +64,6 @@ const setFixedWidth = (url, width) => {
 module.exports = {
     _checkBrowser,
     CheckMobile,
-    thumbnailImage,
     setAutoWidth,
     setFixedWidth
 }
