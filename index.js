@@ -2,7 +2,7 @@
  * Check current browser to see if it is compatable
  */
 const _checkBrowser = () => {
-    if (process.browser) {
+    if (process.browser || typeof window !== 'undefined') {
         let isSafari = /constructor/i.test(window.HTMLElement) || (function (p) { return p.toString() === '[object SafariRemoteNotification]'; })(!window['safari'] || (typeof safari !== 'undefined' && safari.pushNotification))
         let isInterEx = /*@cc_on!@*/false || !!document.documentMode
         let iPhoneiPad = window.navigator.userAgent.match(/iPad/i) || window.navigator.userAgent.match(/iPhone/i)
@@ -23,7 +23,7 @@ const _checkBrowser = () => {
  * Check if screen is less than 800px
  */
 const CheckMobile = () => {
-    if (process.browser) {
+    if (process.browser || typeof window !== 'undefined') {
         if (window.innerWidth <= 800) {
             return true;
         } else {
@@ -37,7 +37,7 @@ const CheckMobile = () => {
  * sets the width of image to that of browser window
  */
 const setAutoWidth = (url) => {
-    if (process.browser) {
+    if (process.browser || typeof window !== 'undefined') {
         if (_checkBrowser()) {
             return url + '?w=' + window.innerWidth
         } else {
