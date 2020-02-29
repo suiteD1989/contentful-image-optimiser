@@ -60,11 +60,43 @@ const setFixedWidth = (url, width) => {
         return url + '?w=' + width + '&fm=webp'
     }
 }
-
+/**
+ * 
+ * @param {*} url 
+ * @param {*} height 
+ * Sets image to a fixed height. Function recieves url and height as params
+ */
+const setFixedHeight = (url, height) => {
+    if (_checkBrowser()) {
+        return url + '?h=' + height
+    } else {
+        return url + '?h=' + height + '&fm=webp'
+    }
+}
+/**
+ * 
+ * @param {*} url 
+ * @param {*} height 
+ * @param {*} width 
+ * Sets image to a fixed height & width. Function recieves url, height & height as params
+ */
+const setHeightWidth = (url, height, width) => {
+    if (height && width) {
+        if (_checkBrowser()) {
+            return url + '?h=' + height + '?w=' + width
+        } else {
+            return url + '?h=' + height + '?w=' + width + '&fm=webp'
+        }
+    } else {
+        return url
+    }
+}
 module.exports = {
     _checkBrowser,
     CheckMobile,
     setAutoWidth,
-    setFixedWidth
+    setFixedWidth,
+    setFixedHeight,
+    setHeightWidth
 }
   
