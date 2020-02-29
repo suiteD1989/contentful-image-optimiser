@@ -4,8 +4,6 @@
 
 <p>The Contentful Image Optimiser is a lightweight module that will improve the speed and performance of any page that serves it's images via Contenful.</p>
 
-<h3> List of features </h3>
-
 <ul>
   <li>Automatically serves appropriate image size depending on device</li>
   <li>Allows you to specify specific image sizes</li>
@@ -26,6 +24,18 @@ automatically change it's format to WebP if supported
 This will return an image with a specified width
 
 <img src="setFixedWidth(/imageURL.png, 350)">
+
+<hr>
+
+This will return an image with a specified height
+
+<img src="setFixedHeight(/imageURL.png, 500)">
+
+<hr>
+
+This will return an image with a specified height and width
+
+<img src="setHeightWidth(/imageURL.png, 500, 500)">
 
 ```
 
