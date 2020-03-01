@@ -83,9 +83,9 @@ const setFixedHeight = (url, height) => {
 const setHeightWidth = (url, height, width) => {
     if (height && width) {
         if (_checkBrowser()) {
-            return url + '?h=' + height + '?w=' + width
+            return url + '?h=' + height + '&?w=' + width
         } else {
-            return url + '?h=' + height + '?w=' + width + '&fm=webp'
+            return url + '?h=' + height + '&?w=' + width + '&fm=webp'
         }
     } else {
         return url

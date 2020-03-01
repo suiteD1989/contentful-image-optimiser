@@ -1,6 +1,6 @@
 {
   "name": "contentful-image-optimiser",
-  "version": "1.2.5",
+  "version": "1.2.6",
   "description": "Optimise image size and quality of assets served from Contentful.",
   "main": "index.js",
   "scripts": {
